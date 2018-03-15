@@ -1,0 +1,13 @@
+<div class="issue-list">
+  <h2>{{title}}</h2>
+  <div class="git-issues" v-if="issues.length">
+  	<ul class="issues">
+  		<li class="issue" v-for="(issue, index) in issues">
+        <h4>{{ issue.title }}</h4>
+        <button class="input-btn" v-on:click="selectIssue(index)">See Details</button>
+        <p>{{ issue.body}}</p>
+        <p>Comments: {{ issue.comments }} </p>
+      </li>
+  	</ul>
+  </div>
+</div>

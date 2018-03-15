@@ -1,0 +1,19 @@
+<div class="repo-form">
+  <h3>{{title}}</h3>
+  <div v-if="!issues.length">
+    <div class="form-field">
+      <label class="input-label" for="username">User Name:</label>
+      <input id="username" type="text" name="username" placeholder="Enter Your GitHub User Name"
+        v-model="user">
+      <span class="form-error" v-if="submitted && !user">User Name is required</span>
+    </div>
+    <div class="form-field">
+      <label class="input-label" for="repo">Repo Name:</label>
+      <input id="repo" type="text" name="repo" placeholder="Enter Your GitHub Repo Name"
+        v-model="repo">
+      <span class="form-error" v-if="submitted && !repo">Repo Name is required</span>
+    </div>
+    <button class="input-btn" type="button" v-on:click="setRepo()">Fetch Repo Issues</button>
+  </div>
+  <button class="input-btn" v-on:click="reset()" v-if="issues.length">Fetch Different Repo Issues</button>
+</div>

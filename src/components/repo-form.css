@@ -1,0 +1,14 @@
+@import url('../styles.css');
+h1, h2 {
+  font-weight: normal;
+}
+
+.repo-form{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 260px;
+  margin: 2px auto;
+  background-color: #fff;
+
+}

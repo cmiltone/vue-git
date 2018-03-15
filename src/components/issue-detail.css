@@ -1,0 +1,12 @@
+@import url('../styles.css');
+.issue-detail{
+	padding: 5px;
+	margin: 5px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+.issue-header{
+	background-color: #fff
+}

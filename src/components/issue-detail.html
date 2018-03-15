@@ -1,0 +1,9 @@
+<div class="issue-detail">
+	<h2>{{ title }}</h2>
+	<div v-if="issue">
+		<h3>{{ issue.title}}</h3>
+		<p> {{ issue.body }} </p>
+		<p><a class="link" target="_blank" v-bind:href="issue.html_url">View On GitHub</a></p>
+	</div>
+	<i v-if="!issue">Loading...</i>
+</div>
